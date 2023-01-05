@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stop & Shop</title>
+
+  <link rel="icon" href="Image/Stop & Shop.png">
+
+</head>
+
+
+<body>
+
+
+  <!--Navbar-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Stop & Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link active" href="./watches.html">Watches</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./bags.html">Bags</a>
+          </li>
+
+
+        </ul>
+       
+
+
+        <!-- Button For Login & Signup -->
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ContactModal">Contact US</button>
+          <!-- <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#SignupModal">Signup</button> -->
+        </div>
+        <!-- Button For Login & Signup -->
+
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="ContactModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="LoginModalLabel">Stop & Shop</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+
+
+            <!-- For Login Page in Example-->
+
+            <div class="text-center"
+              bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMS45LjAiLCJzY29yZSI6MTA5MDAwfV0=">
+
+              <main class="form-signin w-100 m-auto">
+                <form>
+                  <img class="mb-4"
+                        src="Stop & Shop.png"
+                        alt="" width="72" height="57">
+                  <div class="container">
+                    <h2>Contact Us</h2>
+                    <br>
+            
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address :</label><br>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <br>
+            
+                    <p>Are you a member</p>
+            
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        YES
+                    </label>
+            
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        NO
+                    </label>
+            
+                    <br>
+                    <br>
+            
+                    <label for="exampleFormControlTextarea1" class="form-label">Select your Concern</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">Watches</option>
+                        <option value="2">Bags</option>
+                        <!-- <option value="3">Interface</option> -->
+                    </select>
+                    <br>
+            
+            
+            
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Elaborate Your Concern</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <br>
+            
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+            
+                    </div>
+            
+                </form>
+              </main>
+
+
+            </div>
+
+            <!-- For Login Page in Example-->
+
+            <!-- </body> -->
+
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </nav>
+
+  <!--Navbar-->
+
+
+
+
+  <section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x4</p>
+              </div>
+            </div>
+            <img src="Image/hublot.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 2150</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Hublot</h5>
+                <h5 class="text-dark mb-0">RS 1800</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Multiple Color</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x2</p>
+              </div>
+            </div>
+            <img src="Image/hublot1.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 2450</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Hublot</h5>
+                <h5 class="text-dark mb-0">RS 2200</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Multiple Color</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x3</p>
+              </div>
+            </div>
+            <img src="Image/W1.jpeg"
+              class="card-img-top" alt="Gaming Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 2000</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Emporio Armani</h5>
+                <h5 class="text-dark mb-0">RS 1800</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Multiple Color</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x4</p>
+              </div>
+            </div>
+            <img src="Image/smart.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 3700</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">IE 7</h5>
+                <h5 class="text-dark mb-0">RS 3500</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">YES</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x2</p>
+              </div>
+            </div>
+            <img src="Image/W2.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 2700</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">IEKE</h5>
+                <h5 class="text-dark mb-0">RS 2500</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Multiple Color</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x3</p>
+              </div>
+            </div>
+            <img src="Image/hublot2.jpeg"
+              class="card-img-top" alt="Gaming Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 2600</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Hublot</h5>
+                <h5 class="text-dark mb-0">RS 2200</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Multiple Color</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x4</p>
+              </div>
+            </div>
+            <img src="Image/w3.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 3500</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Belleda</h5>
+                <h5 class="text-dark mb-0">RS 3000</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Colors Available</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x2</p>
+              </div>
+            </div>
+            <img src="Image/w4.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 3500</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Belleda</h5>
+                <h5 class="text-dark mb-0">RS 3000</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Colors Available</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x3</p>
+              </div>
+            </div>
+            <img src="Image/w5.jpeg"
+              class="card-img-top" alt="Gaming Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 4500</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Fitron</h5>
+                <h5 class="text-dark mb-0">RS 4000</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">YES</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x4</p>
+              </div>
+            </div>
+            <img src="Image/w6.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 3500</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Fitron</h5>
+                <h5 class="text-dark mb-0">RS 4000</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">YES</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x2</p>
+              </div>
+            </div>
+            <img src="Image/w7.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 2700</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">IEKE</h5>
+                <h5 class="text-dark mb-0">RS 2500</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">YES</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x3</p>
+              </div>
+            </div>
+            <img src="Image/w8.jpeg"
+              class="card-img-top" alt="Gaming Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 2700</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">IEKE</h5>
+                <h5 class="text-dark mb-0">RS 2500</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">YES</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x4</p>
+              </div>
+            </div>
+            <img src="Image/w9.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 2700</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">IEKE</h5>
+                <h5 class="text-dark mb-0">RS 2500</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Multiple Colors</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x2</p>
+              </div>
+            </div>
+            <img src="Image/w10.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 3500</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Ceramic Sphire</h5>
+                <h5 class="text-dark mb-0">3000</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Yes</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x3</p>
+              </div>
+            </div>
+            <img src="Image/w11.jpeg"
+              class="card-img-top" alt="Gaming Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 1900</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Proking</h5>
+                <h5 class="text-dark mb-0">RS 1700</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Yes</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x4</p>
+              </div>
+            </div>
+            <img src="Image/w12.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 4300</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Big 1.95</h5>
+                <h5 class="text-dark mb-0">RS 4000</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Yes</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x2</p>
+              </div>
+            </div>
+            <img src="Image/w13.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 3000</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">SKMEI</h5>
+                <h5 class="text-dark mb-0">RS 2500</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">YES</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x3</p>
+              </div>
+            </div>
+            <img src="Image/w14.jpeg"
+              class="card-img-top" alt="Gaming Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 3700</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Watch GT</h5>
+                <h5 class="text-dark mb-0">RS 3500</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">YES</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x4</p>
+              </div>
+            </div>
+            <img src="Image/w15.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 4400</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Watch GT</h5>
+                <h5 class="text-dark mb-0">RS 4000</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">YES</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x2</p>
+              </div>
+            </div>
+            <img src="Image/w16.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 3800</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Movado</h5>
+                <h5 class="text-dark mb-0">RS 3500</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Yes</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x3</p>
+              </div>
+            </div>
+            <img src="Image/w17.jpeg"
+              class="card-img-top" alt="Gaming Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 3500</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Citizen</h5>
+                <h5 class="text-dark mb-0">RS 3300</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Yes</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x4</p>
+              </div>
+            </div>
+            <img src="Image/w18.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 2800</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Hublot</h5>
+                <h5 class="text-dark mb-0">RS 2200</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Yes</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x2</p>
+              </div>
+            </div>
+            <img src="Image/w19.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 2800</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Hublot</h5>
+                <h5 class="text-dark mb-0">RS 1800</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Yes</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x3</p>
+              </div>
+            </div>
+            <img src="Image/w20.jpeg"
+              class="card-img-top" alt="Gaming Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 3500</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Robenter</h5>
+                <h5 class="text-dark mb-0">RS 3200</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Yes</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section style="background-color: #eee;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-4 mb-4 mb-lg-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x4</p>
+              </div>
+            </div>
+            <img src="Image/w21.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 4000</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">255 Ultra</h5>
+                <h5 class="text-dark mb-0">RS 3700</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Yes</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x2</p>
+              </div>
+            </div>
+            <img src="Image/w22.jpeg"
+              class="card-img-top" alt="Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 4500</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Watch GT</h5>
+                <h5 class="text-dark mb-0">RS 4000</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Yes</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-0">
+          <div class="card">
+            <div class="d-flex justify-content-between p-3">
+              <p class="lead mb-0">Today's Combo Offer</p>
+              <div
+                class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                style="width: 35px; height: 35px;">
+                <p class="text-white mb-0 small">x3</p>
+              </div>
+            </div>
+            <img src="Image/w23.jpeg"
+              class="card-img-top" alt="Gaming Laptop" />
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <p class="small"><a href="#!" class="text-muted">Watches</a></p>
+                <p class="small text-danger"><s>RS 2200</s></p>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-3">
+                <h5 class="mb-0">Hublot</h5>
+                <h5 class="text-dark mb-0">RS 1800</h5>
+              </div>
+  
+              <div class="d-flex justify-content-between mb-2">
+                <p class="text-muted mb-0">Available: <span class="fw-bold">Yes</span></p>
+                <div class="ms-auto text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Footer -->
+
+ 
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center" bis_skin_checked="1">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+    </div>
+    <span class="mb-3 mb-md-0 text-muted">© 2022 Stop & Shop, Inc</span>
+
+    <i class="bi bi-whatsapp">
+
+
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp"
+        viewBox="0 0 16 16">
+        <path
+          d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+      </svg> <span class="mb-3 mb-md-0 text-muted">03243391298</span>
+
+    </i>
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+
+
+  </footer>
+
+
+<!-- Footer -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
